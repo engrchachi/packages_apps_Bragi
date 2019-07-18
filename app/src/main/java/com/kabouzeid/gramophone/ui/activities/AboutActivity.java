@@ -57,6 +57,9 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     private static String ADRIAN_TWITTER = "https://twitter.com/froschgames";
     private static String ADRIAN_WEBSITE = "https://froschgames.com/";
 
+    private static String CHACHI_TWITTER = "https://t.me/chachinito";
+    private static String CHACHI_GITHUB = "https://github.com/engrchachi";
+
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.app_version)
@@ -103,6 +106,10 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     AppCompatButton adrianTwitter;
     @BindView(R.id.adrian_website)
     AppCompatButton adrianWebsite;
+    @BindView(R.id.chachi_telegram)
+    AppCompatButton chachiTelegram;
+    @BindView(R.id.chachi_github)
+    AppCompatButton chachiGithub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -157,6 +164,8 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
         eugeneCheungWebsite.setOnClickListener(this);
         adrianTwitter.setOnClickListener(this);
         adrianWebsite.setOnClickListener(this);
+        chachiTelegram.setOnClickListener(this);
+        chachiGithub.setOnClickListener(this);
     }
 
     @Override
@@ -229,6 +238,11 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
             openUrl(ADRIAN_TWITTER);
         } else if (v == adrianWebsite) {
             openUrl(ADRIAN_WEBSITE);
+        }
+        else if (v == chachiTelegram) {
+            openUrl(CHACHI_TWITTER);
+        } else if (v == chachiGithub) {
+            openUrl(CHACHI_GITHUB);
         }
     }
 

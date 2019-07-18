@@ -7,4 +7,5 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-    android:textColor="?android:textColorSecondary" />
+    android:textColor="?android:textColorSecondary"
+    android:background="?attr/colorPrimary"/>
